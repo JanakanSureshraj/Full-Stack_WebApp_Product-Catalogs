@@ -11,7 +11,7 @@ app.listen(HTTP_PORT, () => {
     console.log("Server is running on port %PORT%".replace("%PORT%", HTTP_PORT));
 });
 
-//api to insert data into the table created in the db 
+//api to insert a product 
 app.post("/api/products", (req, res, next) => {
 
     try {
@@ -55,7 +55,7 @@ app.post("/api/products", (req, res, next) => {
     };
 });
 
-//api to get data 
+//api to get products
 app.get("/api/products", (req, res, next) => {
 
     try {
@@ -77,7 +77,7 @@ app.get("/api/products", (req, res, next) => {
     }
 });
 
-//api to update data 
+//api to update a product
 app.put("/api/products/", (req, res, next) => {
     const {
         id,
