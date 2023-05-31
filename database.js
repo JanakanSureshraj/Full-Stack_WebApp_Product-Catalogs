@@ -28,8 +28,8 @@ let db = new sqlite3.Database(DBSOURCE, (err)=>{
                 }
                 else{
                     //Table created. Creating some rows.
-                    //var insert= "INSERT INTO products (productName, description, brand, expiredDate, manufacturedDate, batchNumber, unitPrice, quantity, createdDate) VALUES (?,?,?,?,?,?,?,?,?,?)";
-                    //db.run(insert, ["White Basmati Rice", "White basmati rice imported from Pakistan. High-quality rice with extra fragnance. Orignally grown.", "Rice", "CIC", "2023.05.04", "2022.02.20", 324567, 1020, 200, "2022.05.31"]);      
+                    var insert= "INSERT INTO products (productName, description, brand, expiredDate, manufacturedDate, batchNumber, unitPrice, quantity, createdDate) VALUES (?,?,?,?,?,?,?,?,?,?)";
+                    db.run(insert, ["White Basmati Rice", "White basmati rice imported from Pakistan. High-quality rice with extra fragnance. Orignally grown.", "Rice", "CIC", "2023.05.04", "2022.02.20", 324567, 1020, 5, "2023.05.31"]);      
                 }
 
             }
